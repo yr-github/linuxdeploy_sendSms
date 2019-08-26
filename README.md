@@ -33,8 +33,8 @@ readSql = "SELECT address,body FROM sms WHERE seen=0"#将未读取短信提取
 **更改完毕后在Android手机上使用supervisor或其他工具来运行sendWechat.py即可。**
 
 ### 关于作者
-还有其他有趣的小项目会陆续在[这里](https://www.yrblog.cn/ "这里")更新的，希望大家关注。
-微信搜索yrtools关注我的公众号，或者下面的二维码。有一些例如京东返利工具的小工具会在上面运行。
+还有其他有趣的小项目会陆续在[这里](https://www.yrblog.cn/ "这里")更新的，希望大家关注。<br>
+微信搜索yrtools关注我的公众号，或者下面的二维码。有一些例如京东返利工具的小工具会在上面运行。<br>
 [![yrtools](https://www.yrblog.cn/wp-content/uploads/2019/08/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20190821220711.png "yrtools")](https://www.yrblog.cn/wp-content/uploads/2019/08/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20190821220711.png "yrtools")
 
 
