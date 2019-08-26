@@ -7,6 +7,9 @@ import smtplib
 from email.mime.text import MIMEText
 
 
+Dbpath = "/mnt/data/com.android.providers.telephony/databases/mmssms.db"#数据库地址，记得必须挂载
+useWechat = True #@TRUE =使用企业微信信息 @False=使用邮件发送信息
+
 #企业微信配置
 AgentId = ""
 CropId = ""
@@ -21,8 +24,7 @@ sendEmail = 'xxxx@163.com'# 邮件发送方邮箱地址
 receiveEmails = ['xxx@qq.com','xxx@gmail.com']#可以写多个接收方 qq邮箱记得添加白名单
 
 
-Dbpath = "/mnt/data/com.android.providers.telephony/databases/mmssms.db"#数据库地址，记得必须挂载
-useWechat = True #@TRUE = 使用企业微信信息 @False使用邮件发送信息
+
 log_name = 'runtime.log'
 LOGGER = logging.getLogger(__name__)
 fh = logging.FileHandler(encoding='utf-8', mode='a', filename=log_name)

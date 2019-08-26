@@ -12,7 +12,7 @@ class OperateSQL():
         return
 
     def updateSms(self):
-        writeSql = "UPDATE sms SET seen = 1 ,read = 1 WHERE seen =0"#按需更改
+        writeSql = "UPDATE sms SET seen = 1 ,read = 1 WHERE seen =0"#更改已经发送短信的读取状态
         try:
             self.getConn()
             cursor = self.conn.cursor()
@@ -30,7 +30,7 @@ class OperateSQL():
                 self.conn.close()
 
     def readSms(self):
-        readSql = "SELECT address,body FROM sms WHERE seen=0"#按需更改
+        readSql = "SELECT address,body FROM sms WHERE seen=0"#将未读取短信提取
         try:
             self.getConn()
             cursor = self.conn.cursor()
