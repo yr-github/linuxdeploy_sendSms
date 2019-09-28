@@ -15,7 +15,7 @@ AgentId = ""
 CropId = ""
 Secret = ""
 Touser = ""
-
+Touser = " WangWu|ZhaoSi "
 #邮箱配置，以163为例
 smtpHost = 'smtp.163.com'#邮箱发送配置
 neateasyUser = 'xxx@163.com'# 163用户名
@@ -93,7 +93,7 @@ def sendLoop(path):
         sqlObj = sqlpy.OperateSQL(path,LOGGER)
         contents = sqlObj.readSms()
         if contents!=0:
-            if useWechat == True:
+            if useWechat :
                 for content in contents:
                     sendSmsWecht(content)
             else:
